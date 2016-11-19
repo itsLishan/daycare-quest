@@ -13,6 +13,15 @@ h1 {
     padding-top: 40px;
 }
 
+p a{
+    text-decoration: none;
+    color: #D81313;
+}
+
+p a:hover{
+    color: #AE1414;
+}
+
 .subtitle {
     font-size: 2.5rem;
 }
