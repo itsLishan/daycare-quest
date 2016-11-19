@@ -10,6 +10,7 @@ var button1Opacity = node.buttons[1].dest === null? '  opacity: 0.7; filter: gra
 return `
 <html>
     <head>
+        <link href="normalize.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
         <script src="popcorn-complete.min.js"></script>
@@ -35,9 +36,6 @@ return `
     </head>
     <body>
         <div id="videoBox">
-            <h1>Shonnie's Daycare Quest</h1>
-            <p class='subtitle'> a Picture Book for Grown-Ups</p>
-
             <video width="1280" height="720" id="video">
                 <source src="${node.name}.mp4">
             </video>
@@ -49,6 +47,9 @@ return `
                     <a href="${button1Dest}" style="text-decoration:none;"><img src="images/${node.buttons[1].image}.png" width="200px"></a>
                 </div>
             </div>
+        <h1>Shonnie's Daycare Quest</h1>
+        <p class='subtitle'> a Picture Book for Grown-Ups</p>
+        <p class='subtitle'>by <a href="http://itslishan.com/">Lishan AZ</a></p>
         </div>
     </body>
 </html>
