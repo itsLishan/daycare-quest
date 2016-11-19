@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+        <script src="popcorn-complete.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                var popcorn = Popcorn("#video");
+                popcorn.play();
+                popcorn.code({
+                    start: 86,
+                    onStart: function() {
+                        document.getElementById("buttonOne").style.visibility="visible";
+                    }
+                });
+                popcorn.code({
+                    start: 86,
+                    onStart: function() {
+                        document.getElementById("buttonTwo").style.visibility="visible";
+                    }
+                });
+            }, false);
+        </script>
+        <title>Shonnie's Daycare Quest</title>
+    </head>
+    <body>
+        <div id="videoBox">
+            <h1>Shonnie's Daycare Quest</h1>
+            <p class='subtitle'> a Picture Book for Grown-Ups</p>
+
+            <video width="1280" height="720" id="video">
+                <source src="Gov3.mp4">
+            </video>
+            <div style="position:relative; left: 325px; top:-273px;">
+                <div id="buttonOne" class="button" style="position:absolute; left:0px; top:0px; visibility:hidden;">
+                    <a href="Job1.html" style="text-decoration:none;"><img src="images/Gov3_Job1.png" width="200px"></a>
+                </div>
+                <div id="buttonTwo" class="button" style="position:absolute; left:310px; top:0px; visibility:hidden;">
+                    <a href="Assist.html" style="text-decoration:none;"><img src="images/Gov3_Assist.png" width="200px"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color:#909080;
+}
+h1, .subtitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+}
+
+#videoBox {
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+#videoBox video {
+    margin-top: 10px;
+}
+
+#footnote {
+    position:relative;
+    top:-200px;
+    left: 200px;
+    color: red;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.js-hidden {
+    display: none;
+}
+/*div.button {
+    width:160px;
+    height:60px;
+    
+    text-align:center;
+    font-family:sans-serif;
+    font-weight:bold;
+
+    color:#353525;
+}*/
